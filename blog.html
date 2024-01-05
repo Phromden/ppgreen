@@ -1,0 +1,473 @@
+
+<?php
+ include("includer/header1.php");
+  include("includer/menu1.php");
+
+?>
+                    <div class="container col-main-containter">
+                        <div class="row">
+                            <div class="col-sm-18 col-main">
+                                <div class="col-wrapper-main">
+                                    <div class="qs-modal modal" id="cdz-qsiframe" tabindex="-1" role="dialog" style="display:none;">
+                                        <div class="ajax-load-wrapper" style="display: none;">
+                                            <div class="ajax-load-button">
+                                                <div class="ajax-loader">Loading...</div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-dialog modal-lg animated zoomIn" role="document" style="display:none;"></div>
+                                    </div>
+                                    <div id="map-popup" class="map-popup" style="display:none;">
+                                        <a href="#" class="map-popup-close" id="map-popup-close">x</a>
+                                        <div class="map-popup-arrow"></div>
+                                        <div class="map-popup-heading">
+                                            <h2 id="map-popup-heading"></h2></div>
+                                        <div class="map-popup-content" id="map-popup-content">
+                                            <div class="map-popup-checkout">
+                                                <form action="#" method="POST" id="product_addtocart_form_from_popup">
+                                                    <input type="hidden" name="product" class="product_id" value="" id="map-popup-product-id" />
+                                                    <div class="additional-addtocart-box">
+                                                    </div>
+                                                    <button type="button" title="Add to Cart" class="button btn-cart" id="map-popup-button"><span><span>Add to Cart</span></span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div class="map-popup-msrp" id="map-popup-msrp-box"><strong>Price:</strong> <span style="text-decoration:line-through;" id="map-popup-msrp"></span></div>
+                                            <div class="map-popup-price" id="map-popup-price-box"><strong>Actual Price:</strong> <span id="map-popup-price"></span></div>
+                                            <script type="text/javascript">
+                                                //<![CDATA[
+                                                document.observe("dom:loaded", Catalog.Map.bindProductForm);
+                                                //]]>
+                                            </script>
+                                        </div>
+                                        <div class="map-popup-text" id="map-popup-text">Our price is lower than the manufacturer's &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page.
+                                            <br />
+                                            <br /> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.</div>
+                                        <div class="map-popup-text" id="map-popup-text-what-this">Our price is lower than the manufacturer's &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page.
+                                            <br />
+                                            <br /> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.</div>
+                                    </div>
+
+                                    <div id="messages_product_view">
+                                    </div>
+
+                                    <!-- <div id="messages_product_view">
+        </div>
+ -->
+                                    <div class="toolbar">
+                                        <div class="pager">
+                                            <p class="amount">
+                                                <strong>2 Item(s)</strong>
+                                            </p>
+
+                                            <div class="limiter">
+                                                <label>Show</label>
+                                                <select onchange="setLocation(this.value)">
+                                                    <option value="blog6395.html?limit=5">
+                                                        5 </option>
+                                                </select> per page </div>
+
+                                        </div>
+
+                                        <div class="sorter">
+
+                                            <div class="sort-by">
+                                                <label>Sort By</label>
+                                                <select onchange="setLocation(this.value)">
+                                                    <option value="http://magento1.codazon.com/fastest/blog?dir=asc&amp;order=created_time" selected="selected">
+                                                        Created At </option>
+                                                    <option value="blog391a.html?dir=asc&amp;order=user">
+                                                        Added By </option>
+                                                </select>
+                                                <a href="blog4d17.html?dir=asc&amp;order=created_time" title="Set Ascending Direction" class="sort-desc"><img src="skin/frontend/codazon_fastest/default/images/i_desc_arrow.gif" alt="Set Ascending Direction" class="v-middle" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="post-list">
+                                        <li class="row postWrapper postWrapper-18">
+                                            <div class="post-image cdz-blog-left col-sm-10">
+                                                <a href="blog/corset-bustier/index.html">
+                                                    <img class="img-responsive" width="380" height="280" src="media/codazon_blog/cache/380x280/codazon_blog_1486777389.jpg" />
+                                                </a>
+                                                <div class="blog-date">February 11, 2017</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-details cdz-blog-right col-sm-14">
+                                                <div class="post-header">
+
+                                                    <div class="postTitle clearfix">
+                                                        <div class="postTitle-blog">
+                                                            <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="blog/corset-bustier/index.html">
+                            BEST OF: VMAS RED CARPET                        </a>
+                    </h2>
+                                                        </div>
+                                                        <div class="addthis_toolbox addthis_default_style" addthis:url="blog/corset-bustier/index.html">
+                                                            <a class="addthis_button_facebook"></a>
+                                                            <a class="addthis_button_twitter"></a>
+                                                            <a class="addthis_button_email"></a>
+                                                            <a class="addthis_button_compact"></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="postContent">
+                                                    <div class="post-description clearfix">
+                                                        Bustier tops and corsets have traditionally been kept hidden under clothes or reserved for the bedroom. But this season, corset tops and bustiers are coming out of the lingerie closet as the finishing touch to a chic outfit.
+                                                    </div>
+                                                    <a class="aw-blog-read-more" href="blog/corset-bustier/index.html" title="BEST OF: VMAS RED CARPET">
+                   Continue Read                </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+
+                                            </div>
+                                        </li>
+                                        <li class="row postWrapper postWrapper-17">
+                                            <div class="post-image cdz-blog-left col-sm-10">
+                                                <a href="blog/734263-pins-patches/index.html">
+                                                    <img class="img-responsive" width="380" height="280" src="media/codazon_blog/cache/380x280/codazon_blog_1486777373.jpg" />
+                                                </a>
+                                                <div class="blog-date">February 11, 2017</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-details cdz-blog-right col-sm-14">
+                                                <div class="post-header">
+
+                                                    <div class="postTitle clearfix">
+                                                        <div class="postTitle-blog">
+                                                            <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="blog/734263-pins-patches/index.html">
+                            The Cool-Girl Guide                     </a>
+                    </h2>
+                                                        </div>
+                                                        <div class="addthis_toolbox addthis_default_style" addthis:url="blog/734263-pins-patches/index.html">
+                                                            <a class="addthis_button_facebook"></a>
+                                                            <a class="addthis_button_twitter"></a>
+                                                            <a class="addthis_button_email"></a>
+                                                            <a class="addthis_button_compact"></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="postContent">
+                                                    <div class="post-description clearfix">
+                                                        Coco Chanel may have famously said to take one thing off before leaving the house, but if the latest fashion trends are anything to go by, it’s time to change that rule. When it comes to accessorizing in 2017, we could rewrite the rule so it says&hellip;
+                                                    </div>
+                                                    <a class="aw-blog-read-more" href="blog/734263-pins-patches/index.html" title="The Cool-Girl Guide">
+                   Continue Read                </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+
+                                            </div>
+                                        </li>
+                                        <li class="row postWrapper postWrapper-19">
+                                            <div class="post-image cdz-blog-left col-sm-10">
+                                                <a href="blog/hygge-fashion/index.html">
+                                                    <img class="img-responsive" width="380" height="280" src="media/codazon_blog/cache/380x280/codazon_blog_1486777535.jpg" />
+                                                </a>
+                                                <div class="blog-date">February 11, 2017</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-details cdz-blog-right col-sm-14">
+                                                <div class="post-header">
+
+                                                    <div class="postTitle clearfix">
+                                                        <div class="postTitle-blog">
+                                                            <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="blog/hygge-fashion/index.html">
+                            This Winter Is Real                     </a>
+                    </h2>
+                                                        </div>
+                                                        <div class="addthis_toolbox addthis_default_style" addthis:url="blog/hygge-fashion/index.html">
+                                                            <a class="addthis_button_facebook"></a>
+                                                            <a class="addthis_button_twitter"></a>
+                                                            <a class="addthis_button_email"></a>
+                                                            <a class="addthis_button_compact"></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="postContent">
+                                                    <div class="post-description clearfix">
+                                                        Whether you consider yourself an ingenue or a full-fledged savant when it comes to interior design, you’ve undoubtedly come across the word hygge. It basically means making everything as comfy as possible
+                                                    </div>
+                                                    <a class="aw-blog-read-more" href="blog/hygge-fashion/index.html" title="This Winter Is Real">
+                   Continue Read                </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+
+                                            </div>
+                                        </li>
+                                        <li class="row postWrapper postWrapper-20">
+                                            <div class="post-image cdz-blog-left col-sm-10">
+                                                <a href="blog/fanny-packs/index.html">
+                                                    <img class="img-responsive" width="380" height="280" src="media/codazon_blog/cache/380x280/codazon_blog_1486777635.jpg" />
+                                                </a>
+                                                <div class="blog-date">February 11, 2017</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-details cdz-blog-right col-sm-14">
+                                                <div class="post-header">
+
+                                                    <div class="postTitle clearfix">
+                                                        <div class="postTitle-blog">
+                                                            <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="blog/fanny-packs/index.html">
+                            Fanny Packs                     </a>
+                    </h2>
+                                                        </div>
+                                                        <div class="addthis_toolbox addthis_default_style" addthis:url="blog/fanny-packs/index.html">
+                                                            <a class="addthis_button_facebook"></a>
+                                                            <a class="addthis_button_twitter"></a>
+                                                            <a class="addthis_button_email"></a>
+                                                            <a class="addthis_button_compact"></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="postContent">
+                                                    <div class="post-description clearfix">
+                                                        Fanny packs, belt bags, bum bags, hip bags — whatever name least offends, their time has come. We could say the trend dates back to Pre-Fall 2016 when Alexander Wang, fashion’s resident club kid, presented rave-ready, slouchy, at times pony&hellip;
+                                                    </div>
+                                                    <a class="aw-blog-read-more" href="blog/fanny-packs/index.html" title="Fanny Packs">
+                   Continue Read                </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+
+                                            </div>
+                                        </li>
+                                        <li class="row postWrapper postWrapper-21">
+                                            <div class="post-image cdz-blog-left col-sm-10">
+                                                <a href="blog/logo-fashion-trend/index.html">
+                                                    <img class="img-responsive" width="380" height="280" src="media/codazon_blog/cache/380x280/codazon_blog_1486777769.jpg" />
+                                                </a>
+                                                <div class="blog-date">February 11, 2017</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-details cdz-blog-right col-sm-14">
+                                                <div class="post-header">
+
+                                                    <div class="postTitle clearfix">
+                                                        <div class="postTitle-blog">
+                                                            <h2 class="post-title">
+                        <a class="post-item-link"
+                           href="blog/logo-fashion-trend/index.html">
+                            Name Is Cool Again                      </a>
+                    </h2>
+                                                        </div>
+                                                        <div class="addthis_toolbox addthis_default_style" addthis:url="blog/logo-fashion-trend/index.html">
+                                                            <a class="addthis_button_facebook"></a>
+                                                            <a class="addthis_button_twitter"></a>
+                                                            <a class="addthis_button_email"></a>
+                                                            <a class="addthis_button_compact"></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="postContent">
+                                                    <div class="post-description clearfix">
+                                                        It used to be that when you dropped some serious coin on high-end designer fare, you wanted to make sure everyone within viewing distance knew what brand you had the purchase power to sport around town. But like with every in-your-face sartorial&hellip;
+                                                    </div>
+                                                    <a class="aw-blog-read-more" href="blog/logo-fashion-trend/index.html" title="Name Is Cool Again">
+                   Continue Read                </a>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer">
+
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <script type="text/javascript">
+                                        var addthis_config = {
+                                            "data_track_clickback": false
+                                        };
+                                    </script>
+                                    <script type="text/javascript" async src="../../s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4def63cd3cf37569"></script>
+                                    <script type="text/javascript">
+                                        var addthis_config = {
+                                            ui_language: "en"
+                                        }
+                                    </script>
+                                    <div class="toolbar">
+                                        <div class="pager">
+                                            <p class="amount">
+                                                <strong>2 Item(s)</strong>
+                                            </p>
+
+                                            <div class="limiter">
+                                                <label>Show</label>
+                                                <select onchange="setLocation(this.value)">
+                                                    <option value="blog6395.html?limit=5">
+                                                        5 </option>
+                                                </select> per page </div>
+
+                                        </div>
+
+                                        <div class="sorter">
+
+                                            <div class="sort-by">
+                                                <label>Sort By</label>
+                                                <select onchange="setLocation(this.value)">
+                                                    <option value="http://magento1.codazon.com/fastest/blog?dir=asc&amp;order=created_time" selected="selected">
+                                                        Created At </option>
+                                                    <option value="blog391a.html?dir=asc&amp;order=user">
+                                                        Added By </option>
+                                                </select>
+                                                <a href="blog4d17.html?dir=asc&amp;order=created_time" title="Set Ascending Direction" class="sort-desc"><img src="skin/frontend/codazon_fastest/default/images/i_desc_arrow.gif" alt="Set Ascending Direction" class="v-middle" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Col right -->
+                            <div class="col-sm-6 col-right sidebar">
+                                <div class="block block-blog block-blog-recents">
+                                    <div class="block-title">
+                                        <strong><span>Recent Posts</span></strong>
+                                    </div>
+                                    <div class="block-content">
+
+                                        <div class="menu-recent">
+                                            <ul>
+                                                <li><a href="blog/corset-bustier/index.html">BEST OF: VMAS RED CARPET</a></li>
+                                                <li><a href="blog/734263-pins-patches/index.html">The Cool-Girl Guide</a></li>
+                                                <li><a href="blog/hygge-fashion/index.html">This Winter Is Real</a></li>
+                                                <li><a href="blog/fanny-packs/index.html">Fanny Packs</a></li>
+                                                <li><a href="blog/logo-fashion-trend/index.html">Name Is Cool Again</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-blog block-blog-categories">
+                                    <div class="block-title">
+                                        <strong><span>Categories</span></strong>
+                                    </div>
+                                    <div class="block-content">
+
+                                        <div class="menu-categories">
+                                            <ul>
+                                                <li><a href="blog/cat/westylefashion/index.html">WestyleFashion</a></li>
+                                                <li><a href="blog/cat/news/index.html">News</a></li>
+                                                <li><a href="blog/cat/lifestyle/index.html">Lifestyle</a></li>
+                                                <li><a href="blog/cat/trending-for-men/index.html">Trending for men</a></li>
+                                                <li><a href="blog/cat/magazine-fashion-design/index.html">Magazine Fashion design</a></li>
+                                                <li><a href="blog/cat/sportswear-news/index.html">Sportswear news</a></li>
+                                                <li><a href="blog/cat/drug-news/index.html">Drug news</a></li>
+                                                <li><a href="blog/cat/outdoor-news/index.html">Outdoor news</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block block-list block-viewed">
+                                    <div class="block-title">
+                                        <strong><span>Recently Viewed Products</span></strong>
+                                    </div>
+                                    <div class="block-content">
+                                        <ol id="recently-viewed-items">
+                                            <li class="item">
+                                                <p class="product-name"><a href="product-page-2-column-right.html">Product page 2 column right</a></p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="product-name"><a href="colorswatch-configurable-product.html">ColorSwatch Configurable product</a></p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="product-name"><a href="around-the-world-in-80-days.html">Around the World in 80 Days</a></p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="product-name"><a href="pearl-necklace-set-test.html">Pearl Necklace Set</a></p>
+                                            </li>
+                                        </ol>
+                                        <script type="text/javascript">
+                                            decorateList('recently-viewed-items');
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="block block-banner">
+                                    <div class="block-content">
+                                        <img src="skin/frontend/codazon_fastest/default/images/media/col_right_callout.jpg" title="Keep your eyes open for our special Back to School items and save A LOT!" alt="Keep your eyes open for our special Back to School items and save A LOT!" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade cdz-popup-wrapper" id="cdz-popup-content" role="dialog">
+                <div class="modal-popup _show">
+                    <div class="modal-dialog modal-inner-wrap">
+                        <header class="modal-header">
+                            <button type="button" class="action-close close" data-dismiss="modal"></button>
+                        </header>
+
+                        <div class="modal-content">
+                            <div class="cdz-popup-content">
+                                <div class="block-popup-content">
+                                    <div class="widget widget-static-block">
+                                        <div class="cdz-popup-newsletter">
+                                            <div class="cdz-popup-newsletter-left">
+                                                <div class="popup-banner">
+                                                    <div class="banner">
+                                                        <a href="#"><img class="img-responsive" src="media/wysiwyg/codazon/drugpharmacy/home/banner-newsletter.jpg" alt="Banner 01" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cdz-popup-newsletter-right">
+                                                <div class="popup-title">
+                                                    <h3 class="text-uppercase"><span>Sign up Newsletter</span></h3>
+                                                </div>
+                                                <div class="popup-content">
+                                                    <div class="popup-content-ads">
+                                                        <p class="popup-content-title h3">Join YourStore's squad for 20% off</p>
+                                                        <p class="popup-content-desc">and get all the latest news, trends and offs and offers straight to your inbox. Or get 15% off using code SQUAD15</p>
+                                                        <div class="popup-content-newsletter">
+                                                            <div class="block block-subscribe">
+                                                                <div class="block-title">
+                                                                    <strong><span>Newsletter</span></strong>
+                                                                </div>
+                                                                <form action="http://magento1.codazon.com/fastest/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail_popup">
+                                                                    <div class="block-content">
+                                                                        <div class="form-subscribe-header">
+                                                                            <label for="newsletter">Sign Up for Our Newsletter:</label>
+                                                                        </div>
+                                                                        <div class="input-box">
+                                                                            <input type="text" name="email" id="newsletter_popup" title="Sign up for our newsletter" class="input-text required-entry validate-email" placeholder="Sign Up for Our Newsletter" />
+                                                                        </div>
+                                                                        <div class="actions">
+                                                                            <button type="submit" title="Subscribe" class="button"><span><span>Subscribe</span></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                                <script type="text/javascript">
+                                                                    //<![CDATA[
+                                                                    var newsletterSubscriberFormDetail_popup = new VarienForm('newsletter-validate-detail_popup');
+                                                                    //]]>
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                        <p class="popup-content-small">1 UK only; 2. Offar expiras 23:59(GMT) 10/02/16; 3.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<?php include("includer/footer.php");?>
